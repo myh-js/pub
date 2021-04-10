@@ -1,4 +1,71 @@
-﻿.hl
+﻿.box1
 {
-    font-size: 15px;
+    
+    height: 4%;
+    margin: 0;
+    padding: 0;
+}
+ul
+{   
+    list-style: none;/*取消无序列表圆点*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: aquamarine;
+    /*overflow: auto;/* 如果导航栏选项多，允许滚动 */
+    /*overflow:hidden;清除浮动*/
+}
+a
+{
+    text-decoration: none;/*取消链接下划线*/
+    color: black;
+    display: block;/*显示为块元素*/
+    padding: 8px 16px;
+}
+li
+{
+    background-color: aquamarine;
+    float: left;
+    position: relative;
+    /*border-right: 1px solid;右侧添加分割线*/
+}
+li a:hover
+{
+    background-color: rgb(44, 185, 174);
+    color: white;
+}
+li a:active
+{
+    background-color: rgb(5, 110, 124);
+    color: white;
+}
+li input
+{
+    vertical-align: middle;
+    position:relative;
+    top: 6px;
+}
+.select li:nth-child(3) 
+{
+    margin-left: 10px;
+}
+li .xl 
+{
+    display: none;
+    position: absolute;
+    box-shadow: 0 8px 16px 0;
+    background-color: white;
+    color: black;
+    min-width: 80px;
+}
+.start li:hover .xl 
+{
+display: block;
+}
+.xl a:hover 
+{
+    background-color: #f1f1f1;
+    color: black;
 }
