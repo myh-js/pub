@@ -1,5 +1,14 @@
 {
     "editor.snippetSuggestions": "bottom",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.multiRootWorkspaceName": "前端test",
+    "liveServer.settings.root": "/",
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.NoBrowser": false,
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=5500",
+    "previewServer.port": 2020,
+    "previewServer.browsers": ["chrome","firefox","opera","safari"]
+
 }

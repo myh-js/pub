@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>test html</title>
-    <style>
-    </style>
-    <!--引入外部css和js文件-->
+    <title>html 学习</title>
+    <link rel="icon" href="../image/icon.jpg" type="image/x-icon">
+    <!--图标-->
     <link rel="stylesheet" type="text/css" href="index.css">
     <script type="text/javascript" src="index.js"></script>
+    <!--引入外部css和js文件-->
 </head>
 <body>
 <div class="box1" >
@@ -45,10 +45,10 @@
         </li>
       <div style="float: right;" class="select">
         <li>
-          <input type="text" value="默认" id="ssnr">
+          <input type="text" placeholder="输入搜索内容" id="ssnr" >
         </li>
         <li>
-          <input type="button" id="ss" value="搜索">
+          <input type="button" id="ss" value="搜索" onclick="getData()">
         </li>
         <li>
            <a href="../sign/sign.html">登录</a>
@@ -60,9 +60,7 @@
     </ul>
 </div>
 <div>
-
-
+<table id="ajaxdata"></table>
 </div>
-
 </body>
 </html>

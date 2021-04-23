@@ -42,7 +42,7 @@ li input{
     top: 6px;
 }
 #time{
-    width: 40%;
+    margin-left: 2%;
     text-align: center;
     line-height: 220%;
 }
@@ -50,21 +50,29 @@ li input{
     position:relative;
     top: 7px;
 }
-.select li:nth-child(3) {
+.select li:nth-child(3){
     margin-left: 20px;
 }
-li .xl {
+li .xl{
     display: none;
     position: absolute;
     box-shadow: 0 8px 16px 0;
-    background-color: white;
+    font-size: small;
+    background-color: aquamarine;
     color: black;
-    min-width: 80px;
+    min-width: 70px;
 }
-.start li:hover .xl {
+.start li:hover .xl{
 display: block;
 }
-.xl a:hover {
+.xl a:hover{
     background-color: #f1f1f1;
     color: black;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr th{
+    padding: 8px;
 }
