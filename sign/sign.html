@@ -5,16 +5,18 @@
 <link rel="stylesheet" href="sign.css">
 <script src="sign.js"></script>
 </head>
-<body>
-    <div class="bg">
+<body onload="init()">
+    <div class="bg" id="bg">
         <img src="../image/evening.jpg" alt="背景图片">
         <div class="srk">
             <p>账号密码登录</p>
-          <form action="#" name="dlform" method="POST" onsubmit="emailcheck()">
-            <input type="text" name="zh"  placeholder="请输入账号">
-            <input type="password" name="mm" maxlength="16" placeholder="请输入密码">
+          <form action="#" name="dlform" method="POST" onsubmit="return formcheck()">
+            <input type="text" id="zh" name="zh" onblur="checkzh()"  placeholder="请输入账号" pattern="[0-9]{1,}" >
+            <input type="password" id="mm" name="mm" onblur="checkmm()" maxlength="16" placeholder="请输入密码">
             <input type="submit"  value="登录">
+            <a href="../index/index.html"><input type="button"  value="返回到首页"></a>
           </form>
+            <div id="tip"></div>
         </div>
     </div>
 </body>

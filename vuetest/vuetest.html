@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vuetest.css">
+    <script type="text/javascript" src="../outjs/vue.js"></script>
+    <title>vue学习页面</title>
+</head>
+<body>
+    <div id="first">
+      <p>{{message}}</p>
+    </div>
+    <script>
+        var vue=new Vue
+        ({
+        el:'#first',
+        data:{
+        message:"hello wrold!"
+        }
+        })
+    </script>
+</body>
+</html>

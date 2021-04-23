@@ -17,6 +17,9 @@ ul{
     /*overflow: auto 如果导航栏选项多，剪切多余部分并允许滚动 */
     /*overflow:hidden;清除浮动*/
 }
+ol{
+    list-style: none;
+}
 a{
     text-decoration: none;/*取消链接下划线*/
     color: black;
@@ -42,7 +45,7 @@ li input{
     top: 6px;
 }
 #time{
-    width: 40%;
+    margin-left: 2%;
     text-align: center;
     line-height: 220%;
 }
@@ -50,21 +53,92 @@ li input{
     position:relative;
     top: 7px;
 }
-.select li:nth-child(3) {
+.select li:nth-child(3){
     margin-left: 20px;
 }
-li .xl {
+li .xl{
     display: none;
     position: absolute;
     box-shadow: 0 8px 16px 0;
-    background-color: white;
+    font-size: small;
+    background-color: aquamarine;
     color: black;
-    min-width: 80px;
+    min-width: 70px;
 }
-.start li:hover .xl {
+.start li:hover .xl{
 display: block;
 }
-.xl a:hover {
+.xl a:hover{
     background-color: #f1f1f1;
     color: black;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr th{
+    padding: 8px;
+}
+.lbt{
+    padding: 0;
+    position: relative;
+    width: 700px;
+    height: 455px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.lbt .left,.right{
+    display: none;
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    width: 20px;
+    height: 40px;
+    background-color: rgba(136, 136, 109, 0.486);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+   
+}
+.lbt .right{
+    right: 0px;
+}
+.lbt ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000%;
+
+    
+}
+.lbt ul li a{
+    padding: 0px;
+}
+img{
+    display:block;
+    width: 700px;
+    height: 455px; 
+}
+.lbt ul li {
+    float: left;
+    margin: 0;
+    background-color:#fff;
+}
+.yd{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+.yd li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.xz{
+    background: orange;
 }
